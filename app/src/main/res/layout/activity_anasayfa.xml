@@ -190,50 +190,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-        <ImageButton
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/pinarst"
-            android:background="@android:color/transparent"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:src="@drawable/pinarpp"
             android:layout_weight="1"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/pinarpp"
-            tools:ignore="SpeakableTextPresentCheck" />
+            />
 
-        <ImageButton
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/elonst"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
+            android:src="@drawable/elonpp"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/elonpp"
-            tools:ignore="SpeakableTextPresentCheck" />
+            />
 
-        <ImageButton
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/zuckst"
-            android:background="@android:color/transparent"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginEnd="10dp"
+            android:src="@drawable/ppzuck"
             android:layout_weight="1"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/zuckkpp"
-            tools:ignore="SpeakableTextPresentCheck" />
+            />
 
-        <ImageButton
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/instast"
             android:background="@android:color/transparent"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/instapp"
+            android:src="@drawable/instapp"
             tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
 
