@@ -60,7 +60,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="  Şifre"
-        app:layout_constraintBottom_toTopOf="@+id/giris"
+        app:layout_constraintBottom_toTopOf="@+id/giris1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kullanici"
@@ -75,13 +75,13 @@
         android:text="Şifremi unuttum"
         android:textColor="#2196F3"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/giris"
+        app:layout_constraintBottom_toTopOf="@+id/giris1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sifre" />
 
     <Button
-        android:id="@+id/giris"
+        android:id="@+id/giris1"
         android:layout_width="211dp"
         android:layout_height="49dp"
         android:layout_marginEnd="8dp"
@@ -106,7 +106,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/giris" />
+        app:layout_constraintTop_toBottomOf="@+id/giris1" />
 
 
     <Button

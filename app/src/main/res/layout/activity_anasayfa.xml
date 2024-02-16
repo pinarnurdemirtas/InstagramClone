@@ -182,7 +182,7 @@
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="97dp"
+        android:layout_height="105dp"
         android:layout_marginBottom="500dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -190,40 +190,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/pinarst"
             android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/pinarpp"
             android:layout_weight="1"
-            />
-
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="#E91E63"
+            app:civ_border_width="6dp"
+            android:src="@drawable/img_20240212_wa0027"/>
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/elonst"
             android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/elonpp"
             android:layout_weight="1"
-            />
-
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="#E91E63"
+            app:civ_border_width="6dp"
+            android:src="@drawable/ppelon"/>
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/zuckst"
             android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/ppzuck"
             android:layout_weight="1"
-            />
-
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="#E91E63"
+            app:civ_border_width="6dp"
+            android:src="@drawable/pppzuck"/>
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/instast"
-            android:background="@android:color/transparent"
-            android:layout_width="105dp"
-            android:layout_height="105dp"
-            android:layout_marginEnd="10dp"
+            android:layout_width="100dp"
             android:layout_weight="1"
+            android:layout_height="100dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/instapp"
-            tools:ignore="SpeakableTextPresentCheck" />
+            app:civ_border_color="#E91E63"
+            app:civ_border_width="6dp"
+            android:src="@drawable/instapp"/>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

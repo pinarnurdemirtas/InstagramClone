@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
 import android.widget.Toast
+import de.hdodenhof.circleimageview.CircleImageView
 
 class anasayfa : AppCompatActivity() {
     private var lastClickTime: Long = 0
@@ -26,30 +27,6 @@ class anasayfa : AppCompatActivity() {
         val bildirim = findViewById<ImageButton>(R.id.bildirimler)
         bildirim.setOnClickListener{
             Toast.makeText(this@anasayfa, "ÜZGÜNÜM BİLDİRİMİN HİÇ YOK", Toast.LENGTH_LONG).show()
-        }
-
-        //pınar story
-        val pinarst = findViewById<ImageButton>(R.id.pinarst)
-        pinarst.setOnClickListener{
-            Toast.makeText(this@anasayfa, "PINAR STORY", Toast.LENGTH_LONG).show()
-        }
-
-        //elif story
-        val elonst = findViewById<ImageButton>(R.id.elonst)
-        elonst.setOnClickListener{
-            Toast.makeText(this@anasayfa, "ELON STORY", Toast.LENGTH_LONG).show()
-        }
-
-        //güler story
-        val zuckst = findViewById<ImageButton>(R.id.zuckst)
-        zuckst.setOnClickListener{
-            Toast.makeText(this@anasayfa, "ZUCK STORY", Toast.LENGTH_LONG).show()
-        }
-
-        //ali story
-        val instast = findViewById<ImageButton>(R.id.instast)
-        instast.setOnClickListener{
-            Toast.makeText(this@anasayfa, "INSTAGRAM STORY", Toast.LENGTH_LONG).show()
         }
 
         //post beğenme

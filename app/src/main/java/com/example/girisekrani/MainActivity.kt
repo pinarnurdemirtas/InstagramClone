@@ -1,18 +1,16 @@
 package com.example.girisekrani
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
-import java.io.File
-import java.lang.Exception
-import kotlin.reflect.KClass
 
 class MainActivity : AppCompatActivity() {
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.giris)
@@ -41,8 +39,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         //giris butonu
-        val giris = findViewById<Button>(R.id.giris)
-        giris.setOnClickListener {
+        val giris1 = findViewById<Button>(R.id.giris1)
+        giris1.setOnClickListener {
             var buyuk = 0
             var kucuk = 0
             var sayi = 0
