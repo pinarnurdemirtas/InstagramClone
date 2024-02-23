@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="510dp">
+
+    <ImageView
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="322dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/zuckpost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="409dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pp"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/ppzuck" />
+
+        <TextView
+            android:id="@+id/ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="5"
+            android:text="Zuck"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/begen"
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:src="@drawable/ekran_g_r_nt_s__2024_02_13_141746" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/yorum"
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:src="@drawable/whatsapp_g_rsel_2024_02_13_saat_14_59_59_3e16aa86" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mesaj"
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:src="@drawable/whatsapp_g_rsel_2024_02_13_saat_15_00_22_f887c9a8" />
+
+        <TextView
+            android:id="@+id/bosluk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_weight="4" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/kaydet"
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:src="@drawable/whatsapp_g_rsel_2024_02_13_saat_15_19_17_6949a56e" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/texttt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="32dp"
+        android:text="556.585 beğenme"
+        android:textColor="#0E0C0C"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <TextView
+        android:id="@+id/isim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="88dp"
+        android:text="Zuck"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/texttt"
+        app:layout_constraintStart_toStartOf="@+id/texttt"
+        app:layout_constraintTop_toBottomOf="@+id/texttt" />
+
+    <TextView
+        android:id="@+id/aciklama"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textColor="#191414"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/isim"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
