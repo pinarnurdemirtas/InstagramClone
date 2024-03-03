@@ -20,16 +20,7 @@ class MainActivity : AppCompatActivity() {
             findViewById(R.id.sifre)
         )
 
-        for (edittext1 in edittextler1){
-            edittext1.setOnFocusChangeListener { _, hasFocus ->
-                if (hasFocus && edittext1.text.toString() == edittext1.text.toString()) {
-                    edittext1.text.clear()
-                } else if (!hasFocus && edittext1.text.isBlank()) {
-                    edittext1.setText(edittext1.text.toString())
-                }
-            }
 
-        }
 
         //facebook butonu
         val facebook = findViewById<Button>(R.id.facebook)
@@ -55,7 +46,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent2)
             }
             else
-                Toast.makeText(this@MainActivity, "HATALI ŞİFRE", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@MainActivity, "Büyük harf, küçük harf ve sayı içermeli !", Toast.LENGTH_LONG).show()
         }
 
         //sifremi unuttum butonu

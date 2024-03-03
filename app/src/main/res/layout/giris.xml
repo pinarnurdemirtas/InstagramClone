@@ -14,6 +14,7 @@
         android:name=".SecondActivity"
         android:layout_width="222dp"
         android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/butonarka"
         android:clickable="true"
         android:text="FACEBOOK ile giriş yap"
@@ -41,29 +42,15 @@
         android:id="@+id/kullanici"
         android:layout_width="210dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="60dp"
         android:background="@drawable/editarka"
         android:ems="10"
-        android:inputType="text"
-        android:text="  Kullanıcı Adı"
-        app:layout_constraintBottom_toTopOf="@+id/sifre"
+        android:hint="  Kullanıcı Adı"
+        android:inputType="  text"
+        app:layout_constraintBottom_toTopOf="@+id/unut"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/yada"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <EditText
-        android:id="@+id/sifre"
-        android:layout_width="210dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/editarka"
-        android:ems="10"
-        android:inputType="text"
-        android:text="  Şifre"
-        app:layout_constraintBottom_toTopOf="@+id/giris1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kullanici"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
@@ -71,28 +58,30 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginStart="77dp"
+        android:layout_marginBottom="30dp"
         android:background="@android:color/transparent"
         android:text="Şifremi unuttum"
         android:textColor="#2196F3"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/giris1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sifre" />
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/giris1"
         android:layout_width="211dp"
         android:layout_height="49dp"
+        android:layout_marginTop="230dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/butonarka"
         android:text="Giriş Yap"
         android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/yok"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sifre" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/yok"
@@ -127,11 +116,26 @@
         android:id="@+id/imageView"
         android:layout_width="241dp"
         android:layout_height="116dp"
-        app:layout_constraintBottom_toTopOf="@+id/facebook"
+        android:layout_marginBottom="530dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/nstagram" />
+        app:srcCompat="@drawable/nsta" />
+
+    <EditText
+        android:id="@+id/sifre"
+        android:layout_width="209dp"
+        android:layout_height="54dp"
+        android:background="@drawable/editarka"
+        android:ems="10"
+        android:hint="  Şifre"
+        android:inputType="  textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/unut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kullanici"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

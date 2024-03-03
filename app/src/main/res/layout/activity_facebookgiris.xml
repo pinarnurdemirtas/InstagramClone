@@ -24,38 +24,21 @@
         android:id="@+id/fkullanici"
         android:layout_width="210dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
         android:background="@drawable/editarka"
         android:ems="10"
+        android:hint="  Kullanıcı"
         android:inputType="text"
-        android:text="  Kullanıcı"
-        app:layout_constraintBottom_toTopOf="@+id/fsifre"
+        app:layout_constraintBottom_toTopOf="@+id/fgiris"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/face"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <EditText
-        android:id="@+id/fsifre"
-        android:layout_width="210dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="400dp"
-        android:background="@drawable/editarka"
-        android:ems="10"
-        android:inputType="text"
-        android:text="  Şifre"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fkullanici"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/fgiris"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="110dp"
         android:background="@drawable/butonarka"
         android:text="GİRİŞ YAP"
         android:textColor="#FFFFFF"
@@ -63,27 +46,29 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/fsifre"
         app:layout_constraintStart_toStartOf="@+id/fsifre"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/funut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginBottom="270dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="2dp"
         android:background="@android:color/transparent"
         android:text="Şifremi Unuttum"
         android:textColor="#3F51B5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/fgiris"
-        app:layout_constraintStart_toStartOf="@+id/fgiris"
-        app:layout_constraintTop_toBottomOf="@+id/fgiris" />
+        app:layout_constraintBottom_toTopOf="@+id/fgiris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fsifre" />
 
     <TextView
         android:id="@+id/veya"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="70dp"
         android:text="_________________VEYA__________________"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -109,10 +94,26 @@
         android:id="@+id/fbaslik"
         android:layout_width="245dp"
         android:layout_height="94dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toTopOf="@+id/fkullanici"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/face" />
+        app:srcCompat="@drawable/facebookkk" />
+
+    <EditText
+        android:id="@+id/fsifre"
+        android:layout_width="208dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/editarka"
+        android:ems="10"
+        android:hint="  Şifre"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/fgiris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fkullanici"
+        tools:ignore="TouchTargetSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

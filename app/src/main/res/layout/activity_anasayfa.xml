@@ -24,7 +24,7 @@
             android:layout_width="81dp"
             android:layout_height="match_parent"
             android:layout_weight="5"
-            app:srcCompat="@drawable/nstagram" />
+            app:srcCompat="@drawable/nsta" />
 
         <TextView
             android:id="@+id/textView7"
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            app:srcCompat="@drawable/ekran_g_r_nt_s__2024_02_13_141746"
+            app:srcCompat="@drawable/kalp"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            app:srcCompat="@drawable/ekran_g_r_nt_s__2024_02_13_141041"
+            app:srcCompat="@drawable/mesaj"
             tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
 
@@ -64,6 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
 
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/pinarst"
             android:layout_width="100dp"
@@ -72,7 +73,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/img_20240212_wa0027"
             app:civ_border_color="#E91E63"
-            app:civ_border_width="6dp" />
+            app:civ_border_width="3dp" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/elonst"
@@ -82,7 +83,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/ppelon"
             app:civ_border_color="#E91E63"
-            app:civ_border_width="6dp" />
+            app:civ_border_width="3dp" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/zuckst"
@@ -92,7 +93,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/pppzuck"
             app:civ_border_color="#E91E63"
-            app:civ_border_width="6dp" />
+            app:civ_border_width="3dp" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/instast"
@@ -102,7 +103,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/instapp"
             app:civ_border_color="#E91E63"
-            app:civ_border_width="6dp" />
+            app:civ_border_width="3dp" />
 
     </LinearLayout>
 

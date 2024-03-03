@@ -20,16 +20,7 @@ class facebookgiris : AppCompatActivity() {
             findViewById(R.id.fsifre)
         )
 
-        for (edittext2 in edittextler2){
-            edittext2.setOnFocusChangeListener { _, hasFocus ->
-                if (hasFocus && edittext2.text.toString() == edittext2.text.toString()) {
-                    edittext2.text.clear()
-                } else if (!hasFocus && edittext2.text.isBlank()) {
-                    edittext2.setText(edittext2.text.toString())
-                }
-            }
 
-        }
 
         //giriş yap butonu
         val fgiris = findViewById<Button>(R.id.fgiris)
